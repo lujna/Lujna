@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ہیئت طلاب بلتستان نجف اشرف</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        img {
+            width: 150px;
+            height: auto;
+        }
+        .question {
+            text-align: right;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.jpeg" alt="Logo">
+        <h2>ہیئت طلاب بلتستان نجف اشرف - MCQs</h2>
+        <form id="mcqForm">
+            <div class="question">
+                <p>1. پہلا سوال یہاں؟</p>
+                <input type="radio" name="q1" value="صحیح"> صحیح
+                <input type="radio" name="q1" value="غلط"> غلط
+            </div>
+            <div class="question">
+                <p>2. دوسرا سوال یہاں؟</p>
+                <input type="radio" name="q2" value="صحیح"> صحیح
+                <input type="radio" name="q2" value="غلط"> غلط
+            </div>
+            <button type="submit">جوابات جمع کروائیں</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("mcqForm").onsubmit = function(event) {
+            event.preventDefault();
+            alert("آپ کے جوابات جمع ہو چکے ہیں!");
+        };
+    </script>
+</body>
+</html>
